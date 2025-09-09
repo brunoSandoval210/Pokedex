@@ -1,0 +1,9 @@
+export const cardsContainer = document.getElementById('cards');
+export const container = document.getElementById('contenedor');
+export const limitSelect = document.getElementById('limit-select');
+export const searchForm = document.getElementById('search-form');
+export const searchInput = document.getElementById('search');
+export const cleanButton = document.getElementById('clear-button');
+export const paginationNext = document.getElementById('next-button');
+export const paginationPrev = document.getElementById('prev-button');
+export const loading = document.getElementById("loading");

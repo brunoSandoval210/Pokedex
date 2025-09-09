@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="Pokedex Logo">
+    </header>
+    <main class="contenedor" id="contenedor">
+        <section class="cards" id="cards">
+            <h2>Pokemones</h2> 
+            <div class="filters">
+                <div class="limit">
+                    Mostrar 
+                    <select name="limit" id="limit-select">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+                <form class="search-pokemon" id="search-form">
+                    <input type="text" id="search" placeholder="Buscar Pokemon...">
+                    <button class="submit" type="submit" id="search-button">Buscar</button>
+                    <button class="clean" type="submit" id="clear-button">Limpiar</button>
+                </form>
+            </div>
+            <div id="loading" class="spinner" style="display:none;"></div>
+        </section>
+        <div class="pagination">
+            <button id="prev-button">Anterior</button>
+            <button id="next-button">Siguiente</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pokedex - Todos los derechos reservados. Bruno Sandoval</p>
+    </footer>
+</body>
+<script src="js/main.js" type="module"></script>
+</html>
